@@ -1,17 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Css 1</title>
-        <link rel="stylesheet" href="./style.css">
-    </head>
-    <body>
-        <!-- <h1>salam dunya</h1>
-        <span>salam</span>
-         -->
-        <!-- <p>salam dunya</p> -->
-         
-         <div>
-            <p>helo</p>
-            <p>world</p>
-         </div>
-    </body>
+<html lang="tr">
+<head>
+
+<title>Kart duzeltmek</title>
+
+<style>
+body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    background: #f0f0f0;
+    padding: 25px;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    width: 360px;
+    height: 220px;
+    border-radius: 18px;
+    padding: 22px;
+    color: white;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.purple { background: #8d2be0; }
+.black  { background: #000; }
+.green  { background: #0d7e15; }
+.blue   { background: #143CFF; }
+
+.chip {
+    width: 48px;
+    height: 38px;
+    background: gold;
+    border-radius: 6px;
+    margin-bottom: 22px;
+}
+
+.number {
+    font-size: 21px;
+    letter-spacing: 2px;
+    margin: 15px 0;
+}
+
+.name {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 22px;
+}
+
+.valid {
+    font-size: 12px;
+    position: absolute;
+    bottom: 22px;
+}
+
+.brand {
+    position: absolute;
+    right: 22px;
+    bottom: 22px;
+    font-weight: bold;
+}
+
+.visa {
+    font-size: 34px;
+}
+
+.bank {
+    position: absolute;
+    right: 22px;
+    top: 18px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sber { opacity: 0.55; }
+.vtb  { font-size: 23px; }
+
+/* MasterCard logosu */
+.mc {
+    width: 58px;
+    height: 58px;
+    background:
+        radial-gradient(circle at 22px 29px, red 48%, transparent 49%),
+        radial-gradient(circle at 36px 29px, orange 48%, transparent 49%);
+    border-radius: 50%;
+}
+</style>
+
+</head>
+<body>
+
+<!-- Mor VISA -->
+<div class="card purple">
+    <div class="chip"></div>
+    <div class="number">4500 6812 5512 6089</div>
+    <div class="name">ALEKSEEV IVAN</div>
+    <div class="valid">Valid thru:<br>07/22</div>
+    <div class="brand visa">VISA</div>
+</div>
+
+<!-- Siyah Tinkoff VISA -->
+<div class="card black">
+    <div class="bank">Тинькофф Банк</div>
+    <div class="chip"></div>
+    <div class="number">4500 6812 5512 6089</div>
+    <div class="name">ALEKSEEV IVAN</div>
+    <div class="valid">Valid thru:<br>07/22</div>
+    <div class="brand visa">VISA</div>
+</div>
+
+<!-- Yeşil Sberbank MasterCard -->
+<div class="card green">
+    <div class="bank sber">СБЕРБАНК</div>
+    <div class="chip"></div>
+    <div class="number">4500 6812 5512 6089</div>
+    <div class="name">ALEKSEEV IVAN</div>
+    <div class="valid">Valid thru:<br>07/22</div>
+    <div class="brand mc"></div>
+</div>
+
+<!-- Mavi VTB MasterCard -->
+<div class="card blue">
+    <div class="bank vtb">btБ24</div>
+    <div class="chip"></div>
+    <div class="number">4500 6812 5512 6089</div>
+    <div class="name">ALEKSEEV IVAN</div>
+    <div class="valid">Valid thru:<br>07/22</div>
+    <div class="brand mc"></div>
+</div>
+
+</body>
+</html>
