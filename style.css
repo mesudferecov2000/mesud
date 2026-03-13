@@ -1,81 +1,79 @@
-body {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 25px;
-    background: #f0f0f0;
-    padding: 25px;
-    font-family: Arial, sans-serif;
-}
+/* div{ */
 
-.card {
-    width: 360px;
-    height: 220px;
-    border-radius: 18px;
-    padding: 22px;
-    color: white;
+    /* width: 200px;
+    height: 200px;
+    background-color: brown; */
+    /* position: static; */
+    /* position: fixed; */
+
+/* } */
+
+/* h1{
+    padding-top: 200px;
+} */
+
+
+/* .main{
+    width: 800px;
+    height: 800px;
+    border: 10px solid black;
+    margin: 25px auto;
     position: relative;
-    box-sizing: border-box;
-}
+    font-size: 50px;
+} */
 
-.purple { background: #8d2be0; }
-.black  { background: #000; }
-.green  { background: #0d7e15; }
-.blue   { background: #143CFF; }
-
-.chip {
-    width: 48px;
-    height: 38px;
-    background: gold;
-    border-radius: 6px;
-    margin-bottom: 22px;
-}
-
-.number {
-    font-size: 21px;
-    letter-spacing: 2px;
-    margin: 15px 0;
-}
-
-.name {
-    font-size: 17px;
-    font-weight: bold;
-    margin-bottom: 22px;
-}
-
-.valid {
-    font-size: 12px;
+/* .child{
+    width: 150px;
+    height: 150px;
+    background-color: teal;
     position: absolute;
-    bottom: 22px;
+    margin: 5px;
+} */
+
+/* .box2{
+    width: 100px;
+    top: 50px;
+    background-color: brown;
+    /* z-index: 1; */
+    /* z-index: -1; */ 
+    
+/* } */
+/* 
+.box1{
+   z-index: 2;
+    background-color: green; */
+
+/* } */
+
+/* .box3{
+    background-color: yellow;
+    width: 50px;
+    top: 100px;
+z-index: 3; */
+
+/* } */
+
+
+
+
+
+product-card {
+    transition: transform 0.3s ease; 
+    padding: 200px;
+    border: 1px solid#dddddd;
+    border-radius: 8px;
+    background-color: yellow
 }
 
-.brand {
-    position: absolute;
-    right: 22px;
-    bottom: 22px;
-    font-weight: bold;
+
+.product-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 20px rgba(35, 24, 12, 0.1);
 }
 
-.visa {
-    font-size: 34px;
-}
 
-.bank {
-    position: absolute;
-    right: 22px;
-    top: 18px;
-    font-size: 20px;
-    font-weight: bold;
-}
 
-.sber { opacity: 0.55; }
-.vtb  { font-size: 23px; }
 
-/* MasterCard logosu */
-.mc {
-    width: 58px;
-    height: 58px;
-    background:
-        radial-gradient(circle at 22px 29px, red 48%, transparent 49%),
-        radial-gradient(circle at 36px 29px, orange 48%, transparent 49%);
-    border-radius: 50%;
-}
+
+
+
