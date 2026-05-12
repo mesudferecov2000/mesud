@@ -1,11 +1,16 @@
-function IsValidNumber(phoneNumber) {
-    const digitsOnly = phoneNumber.replace(/\D/g, "");
 
-    if (phoneNumber.startsWith("+7") && digitsOnly.length === 11) {
-        return true;
-    } else {
-        return false;
-    }
+let original = [1, 2, 3, 4, 5];
+
+let newArray = [...original];
+
+
+newArray = newArray.map(num => num * 2);
+
+console.log("Orijinal massiv:", original);
+console.log("Yeni massiv:", newArray);
+
+if (JSON.stringify(original) === JSON.stringify([1, 2, 3, 4, 5])) {
+    console.log("Orijinal massiv dəyişməyib.");
+} else {
+    console.log("Orijinal massiv dəyişib.");
 }
-
-console.log(IsValidNumber("+71234567890"));
