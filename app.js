@@ -1,16 +1,24 @@
+let arr = ['green', 'red', 'blue'];
 
-let original = [1, 2, 3, 4, 5];
+let result = arr.find(function (i) {
+    if (i.length == 3) {
+        return i;
+    }
+});
 
-let newArray = [...original];
+console.log(result);
+
+let arr2 = ['Abbas', 'Amin', 'Vaqif', 'Ferhad', 'Anar'];
+
+let result2 = arr2.filter(function (a) {
+    if (a[0] == 'A') {
+        return a;
+    }
+});
+
+console.log(result2);
 
 
-newArray = newArray.map(num => num * 2);
 
-console.log("Orijinal massiv:", original);
-console.log("Yeni massiv:", newArray);
 
-if (JSON.stringify(original) === JSON.stringify([1, 2, 3, 4, 5])) {
-    console.log("Orijinal massiv dəyişməyib.");
-} else {
-    console.log("Orijinal massiv dəyişib.");
-}
+
