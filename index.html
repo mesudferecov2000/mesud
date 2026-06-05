@@ -1,28 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="az">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ev tapsirigi</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Table</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="app.js"></script>
 
-</script>
 <div class="container">
-        <h1>List of bootcamp participants:</h1>
 
-        <p>
-            The list is randomly generated, any matches are random.
-        </p>
+    <h1>İşçilər Siyahısı</h1>
 
-        <ul id="studentList">
-            <li>Andrey Sitrik</li>
-            <li>Charlie Gerard</li>
-            <li>Alex Blom</li>
-        </ul>
+    <div class="form">
+        <input type="text" id="name" placeholder="Ad">
+        <input type="text" id="surname" placeholder="Soyad">
+        <input type="number" id="salary" placeholder="Maaş">
+        <button id="addBtn">Yeni əlavə et</button>
     </div>
 
-    <script src="script.js"></script>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Ad</th>
+                <th>Soyad</th>
+                <th>Maaş</th>
+                <th>Əməliyyatlar</th>
+            </tr>
+        </thead>
+
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
